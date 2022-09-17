@@ -1,0 +1,233 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+}
+/* selecter */
+.header{
+    width: 90%;
+    font-size: 40px;
+    margin-left: 50px;
+}
+h2,h3,h1,h4 { 
+    color: rgb(48, 33, 181); 
+    font-size: 40px;
+    font-family: sans-serif;
+} 
+h1,h2,h3,h4,p{
+    font-family: sans-serif;
+}
+.container{
+    width:60%;
+    margin: auto;
+    float: left;
+}
+.img-2{
+    height: 25%;
+    width: 25%;
+}
+.related{
+    margin-top: 50px;
+    background-color: rgb(75, 181, 75);
+    width: 350px;
+    text-align: center;
+}
+nav{
+    float: right;
+    margin-right: 50px;
+}
+nav a{
+    margin: 15px;
+}
+/* .nav{
+    vertical-align: middle;
+} */
+nav a:last-child{
+    margin-right: 0px;
+}
+/* #nav{
+    vertical-align: middle;
+} */
+h3 {
+   /* color: aquamarine; */
+   font-size: 45px;
+   /* font-family: sans-serif; */
+   margin-top: 25px;
+   /* margin: top right bottom left; */
+   /* margin: top/bottom left/right; */
+}
+p { 
+    font-size: 20px; 
+    line-height: 1.5;
+    /* color: wheat; */
+    /* font-family: sans-serif; */
+} 
+h4{
+    /* color: burlywood; */
+    font-size: 20px;
+    font-style: italic;
+    /* font-family: sans-serif; */
+}
+h1{
+    /* color: blue; */
+    font-size: 40px;
+    /* font-family: sans-serif; */
+    float: left;
+    vertical-align: middle;
+    margin-top: 10px;
+}
+ul,ol{
+    font-size: 20px;
+}
+li{
+    margin-left: 45px;
+    margin-bottom: 12px;
+}
+li:last-child{
+    margin-bottom: 0px;
+}
+/* Descendant */
+/* header p{
+    color: orange;
+} */
+/* article p em{
+    font-style: italic;
+    color: orange;
+} */
+/* Class or id */
+/* #id-1{ */
+    /* color: blueviolet;
+    font-style: italic;
+    font-size: 25px; */
+/* } */
+/* .myparra{ */
+    /* color: brown; */
+/* } */
+/* Combinators */
+/* article p{
+    color: orange;
+} */
+/* + imediate siblings */
+/* li+li{
+    color: brown;
+    font-size: 30px;
+} */
+/* ul li{
+    color: red;
+    font-size: 20px;
+} */
+/* general siblings */
+/* li~li{
+    color: brown;
+} */
+/* Psuedoclass */
+/* lvha */
+a:link{
+    font-size: 25px;
+    color: red;
+}
+a:visited{
+    font-size: 25px;
+    color: red;
+}
+a:hover{
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
+a:active{
+    background-color: rgb(118, 188, 188);
+    color: yellow;
+}
+/* lvha */
+.main-header{
+    background-color: rgb(200, 162, 112);
+    height: 90px;
+}
+/* Structural Psuedoclass*/
+/* li:nth-child(2n+1){
+ color: blue;
+} */
+/* li:nth-child(-2n+3){
+ color: blue;
+} */
+/* li:nth-child(even){
+    color: blue;
+} */
+/* Resolving Conflects */
+header p{
+    color: orange;
+}
+p{
+    color: brown;
+}
+/* Resolving Conflects */
+.post-img{
+    width:25%;
+    height: 160px;
+}
+.img-1{
+    width: 50%;
+    height: 190px;
+    /* border-radius: 90%; */
+}
+/* important > inline styling > id > class > header p > p*/
+#mypara{
+    color: brown;
+}
+p{
+    color: purple;
+}
+header p{
+    color: orange;
+}
+header p{
+    color: dimgray;
+}
+.mypara{
+    color: darkblue;
+}
+.mypara{
+    color: burlywood;
+}
+.container{
+    background-color: yellow;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.post{
+    float:left;
+}
+
+.related{
+    float: right;
+    margin-right: 100px;
+    border: 4px solid;
+    border-color: green;
+}
+.clear-fix{
+    display: block;
+    clear: both;
+}
+footer{
+    display: block;
+    clear: both;
+}
+article{
+    position: relative;
+}
+/* Adding the top article tag */
+.post-header::after{
+    content: TOP;
+    background-color: rgba(96, 20, 168, 0.877);
+    font-weight: bold;
+    padding: 10px;
+    font-size: 20px;
+    /* position: relative; */
+    /* top: 100px; */
+    /* left: 300px; */
+    position: absolute;
+    top: 10px;
+    /* right: 0; */
+    left: 0;
+}
